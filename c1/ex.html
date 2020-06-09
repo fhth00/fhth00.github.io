@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     .page{clear: both; width: 1100px; margin: 10px auto; margin-top: 50px;}
+        .page_tit { text-align: center; }
+        .frm { clear:both; margin-top:30px; }
+        .frm fieldset, .frm .btn_fr { clear:both; border:0; outline:0; width: 960px; margin:20px auto; }
+        .indata { display:block; width:400px; height: 40px; line-height: 40px; font-size:18px; margin: 20px auto; text-indent:14px; }
+        .frm .btn_fr { width: 410px; }
+        .fr_comment { clear:both; width: 410px; margin:0 auto; line-height: 50px;  border-top:2px solid #333;  }
+        .fr_comment a { color:#333; }
+        .btn_fr li { float:left; }
+        .fr_btn { display:block; width: 100px; text-align:center; height: 42px; line-height: 42px; background:#333; color:#fff; outline:0; border:0; border-radius:8px; cursor: pointer; margin: 18px; }
+
+
+</style>
+<body>
+    <div class="contents">
+        <section class="page" id="login">
+            <h2 class="page_tit">로그인</h2>
+            <form action="" id="frm1" class="frm">
+                <fieldset>
+                    <input type="text" placeholder="아이디를 입력" id="id" class="indata">
+                    <input type="password" placeholder="패스워드를 입력" id="pw" class="indata">
+                </fieldset>
+                <ul class="btn_fr">
+                    <li>
+                        <input type="submit" value="로그인" class="fr_btn">
+                    </li>
+                    <li>
+                        <input type="reset" value="취소" class="fr_btn">
+                    </li>   
+                    <li>
+                        <a href="" class="fr_btn">회원가입</a>
+                    </li>
+                </ul>
+            </form>
+            <div class="fr_comment">
+                <p><a href="">아이디를 잊으셨습니까?</a></p>
+                <p><a href="">비밀번호를 잊으셨습니까?</a></p>
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>

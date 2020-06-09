@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안양본병원</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./main.css">
+    <style>
+     
+    </style>
+    <script src="https://code.jquery.com/jquery-latest.js">></script>
+  
+
+<meta name="viewport" content="width=720">
+
+<meta property="og:type" content="website">
+
+<meta property="og:title" content="Daum 지도 API">
+
+<link rel="stylesheet" type="text/css" href="http://s1.daumcdn.net/svc/attach/U03/cssjs/mapapidoc/1421136453605/service.min.css">
+
+<style>
+
+body { background:white; }
+
+</style>
+
+<script type="text/javascript" src="http://dmaps.daum.net/map_js_init/v3.js"></script>
+
+<script type="text/javascript" src="http://s1.daumcdn.net/svc/original/U03/cssjs/jquery/jquery-1.11.0.js"></script>
+
+<script type="text/javascript" src="http://s1.daumcdn.net/svc/original/U0301/cssjs/JSON-js/fc535e9cc8/json2.min.js"></script>
+    
+</head>
+
+<!--[if gte IE 10]><!-->
+
+    <body class="web guide" data-page_section="web" data-page_type="guide" data-title="Daum 지도 Web API 가이드">
+
+        <!--<![endif]-->
+        
+        <!--[if lte IE 7]>
+        
+        <body class="very_low web guide" data-page_section="web" data-page_type="guide" data-title="Daum 지도 Web API 가이드">
+        
+        <![endif]-->
+        
+        <!--[if lte IE 9]>
+        
+        <body class="low web guide" data-page_section="web" data-page_type="guide" data-title="Daum 지도 Web API 가이드">
+        
+        <![endif]-->
+    <div class="container">
+        <header class="hdr">
+            <div class="hdr_wrap">
+                <nav id="tnb" class="inner">
+                    <a href="" class="com_img logo">
+                        <img src="./병원페이지 자료/로고.png" alt="로고">
+                    </a>
+                    <ul class="top">
+                        <li><a href="">원격</a></li>
+                        <li><a href="">로그인</a></li>
+                        <li><a href="">회원가입</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hdr_wrap">
+                <nav id="gnb" class="inner">
+                    <input type="checkbox" class="ck_item" id="ck1">
+                    <input type="checkbox" class="ck_item" id="ck2">
+                    <label for="ck1" id="lb1" class="com_img lst_btn">목록</label>
+                    <label for="ck2" id="id2" class="com_img search_btn">검색</label>
+                    <div class="lst">
+                    <h2 class="tit2 lst_tit">사이트맵</h2>
+                    <ul class="sitemap">
+                        <li>
+                            <h3 class="st_cate_tit">척추</h3>
+                            <dl class="st_lst">
+                                <dt>디스크</dt>
+                                <dd><a href="">내시경레이저</a></dd>
+                                <dd><a href="">미니레이저</a></dd>
+                                <dd><a href="">경막외유착</a></dd>
+                            </dl>
+                            <dl class="st_lst">
+                                <dt>확장술</dt>
+                                <dd><a href="">척추협찬풍선확장술</a></dd>
+                                <dd><a href="">미세현미경확장술</a></dd>
+                                <dd><a href="">목디스크수술</a></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <h3 class="st_cat_tit">본어깨프로그램</h3>
+                            <dl class="st_lst">
+                                <dt>관절내시경</dt>
+                                <dd><a href=""></a></dd>
+                                <dd><a href=""></a></dd>
+                                <dd><a href=""></a></dd>
+                            </dl>
+                            <dl class="st_lst">
+                                <dt>ESTW</dt>
+                                <dd><a href=""></a></dd>
+                                <dd><a href=""></a></dd>
+                                <dd><a href=""></a></dd>
+                        </li>
+                        <li>
+                            <h3 class="st_cat_tit">체형교정</h3>
+                            <dl class="st_lst">
+                                <dt>흰다리치료</dt>
+                                <dd><a href=""></a></dd>
+                                <dd><a href=""></a></dd>
+                                <dd><a href=""></a></dd>
+                            </dl>
+                            <dl class="st_lst">
+                                <dt>무지외반증</dt>
+                                <dd><a href=""></a></dd>
+                                <dd><a href=""></a></dd>
+                                <dd><a href=""></a></dd>
+                        </li>
+                    </ul>
+                </div>
+                
+
+                <ul class="mainmenu">
+                    <li class="dp1">
+                        <a href="">프로그램</a>
+                        <div class="sub">
+                            <ul class="menu">
+                                <li class="it1">
+                                    <dl class="menu_cate">
+                                        <dt>본초진프로그램</dt>
+                                        <dd><a href="">소메뉴명1</a></dd>
+                                    </dl>
+                                    <dl class="menu_cate">
+                                        <dt>다리프로그램/dt>
+                                        <dd><a href="">소메뉴명1</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="it2">
+                                    <dl class="menu_cate">
+                                        <dt>척추프로램</dt>
+                                        <dd><a href="">소메뉴명1</a></dd>
+                                    </dl>
+                                    <dl class="menu_cate">
+                                        <dt>어깨프로그램</dt>
+                                        <dd><a href="">소메뉴명1</a></dd>
+                                    </dl>
+                                </li>
+                                
+                            </ul>
+                            <div class="thumbox">
+                                <a href=""><img src="" alt=""></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dp1">
+                        <a href="">병원소개</a>
+                        <div class="sub">
+                            <ul class="menu">
+                                <li class="it1">
+                                    <dl class="menu_cate">
+                                        <dt>병원장</dt>
+                                        <dd><a href="">인사말</a></dd>
+                                    </dl>
+                                    <dl class="menu_cate">
+                                        <dt>진료철학</dt>
+                                        <dd><a href="">비전</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="it2">
+                                    <dl class="menu_cate">
+                                        <dt>진료비</dt>
+                                        <dd><a href="">비급여진료비</a></dd>
+                                    </dl>
+                                    <dl class="menu_cate">
+                                        <dt>층별위치안내</dt>
+                                        <dd><a href="">상세</a></dd>
+                                    </dl>
+                                </li>
+                                
+                            </ul>
+                            <div class="thumbox">
+                                <a href=""><img src="" alt=""></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dp1">
+                        <a href="">체형교정</a>
+                        <div class="sub">
+                            <ul class="menu">
+                                <li class="it1">
+                                    <dl class="menu_cate">
+                                        <dt>바디프로그램</dt>
+                                        <dd><a href="">소메뉴명1</a></dd>
+                                    </dl>
+                                    <dl class="menu_cate">
+                                        <dt>체형프로그램</dt>
+                                        <dd><a href="">신경전달외막</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="it2">
+                                    <dl class="menu_cate">
+                                        <dt>흰다리교정</dt>
+                                        <dd><a href="">요가</a></dd>
+                                    </dl>
+                                    <dl class="menu_cate">
+                                        <dt>침술</dt>
+                                        <dd><a href="">침</a></dd>
+                                    </dl>
+                                </li>
+                                
+                            </ul>
+                            <div class="thumbox">
+                                <a href=""><img src="" alt=""></a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+                <div class="search">
+                    <div class="search_wrap">
+                        <label for="ck2" class="com_ing search_close_btn">x</label>
+                    
+                    <form name="search_form" class="search_field">
+                        <input type="text" placeholder="무엇이 궁금하세요?" class="search_data">
+                        <input type="submit" value="검색" class="com_img search_btn2">
+                    </form>
+                    <div class="hashtag">
+                        <p>
+                            <a href="">#척추</a>
+                            <a href="">#허리</a>
+                            <a href="">#어꺠</a>
+                            <a href="">#체형교정</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+                </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="content">
+            <figure class="main_vs">
+                <ul class="ban_box">
+                    <li ><a href=""><img src="./병원페이지 자료/[꾸미기]slider_banner_pic1.jpg" alt=""></a></li>
+                    <li ><a href=""><img src="./병원페이지 자료/[꾸미기]slider_banner_pic2.jpg" alt=""></a></li>
+                    <li ><a href=""><img src="./병원페이지 자료/[꾸미기]slider_banner_pic3.jpg" alt=""></a></li>
+                    <li ><a href=""><img src="./병원페이지 자료/[꾸미기]slider_banner_pic4.jpg" alt=""></a></li>
+                </ul>
+                <div class="lrbtn_box">
+                    <button class="vs_btn left"></button>
+                    <button class="vs_btn right"></button>
+                </div>
+                <ul class="numbtn_box">
+                    <li><button class="vs_btn_on"></button></li>
+                    <li><button class="vs_btn"></button></li>
+                    <li><button class="vs_btn"></button></li>
+                    <li><button class="vs_btn stop"></button></li>
+                </ul>
+            </figure>
+            <div class="con_wrap">
+                <section class="page" id="page1">
+                    <div class="page_wrap">
+                        <h2 class="page_tit"></h2>
+                        <p class="page_com"></p>
+                        <ul class="row">
+                            <li class="col3 whtxt c008ace txt_left">
+                                <h3 class="grd_tit">진료예약</h3>
+                                <p class="grd_com">빠르고 쉽게 진료예약을
+                                    하실 수 있습니다.</p>
+                                <ul class="grd_lst">
+                                    <li><a href="">진료예약</a></li>
+                                    <li><a href="">첫예약상담</a></li>
+                                </ul>
+                            </li>
+                            <li class="col3 whtxt c2763ba txt_left">
+                                <h3 class="grd_tit">진료과/센터</h3>
+                                <p class="grd_com">병원의 진료과 / 센터를
+                                    상세히 확인할 수 있습니다.</p>
+                                <ul class="grd_lst2">
+                                    <li><a href="">본원</a></li>
+                                    <li><a href="">어린이병원</a></li>
+                                    <li><a href="">암병원</a></li>
+                                </ul>
+                            </li>
+                            <li class="co13 c27640a">
+                                <input type="radio"name="log_ra" id="log_ra1" class="log_ra" checked>
+                                <input type="radio"name="log_ra" id="log_ra2" class="log_ra">
+                                <div class="log_lb_box">
+                                    <label for="log_ra1" class="log_lb">로그인</label>
+                                    <label for="log_ra2" class="log_lb">회원가입</label>
+                                </div>
+                                <form action="" id="login1" class="login">
+                                    <input type="text" name="m_id" placeholder="아이디/진찰권 번호" class="login_input"> 
+                                    <input type="password" name="m_pw" placeholder="비밀번호" class="login_input"> 
+                                    <p class="log_link">
+                                        <a href="">회원가입</a>
+                                        <a href="">아이디/비밀번호 찾기</a>
+                                    </p>  
+                                </form>
+                            
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="page" id="page2">
+                    <div class="page_wrap">
+                        <h2 class="page_tit"></h2>
+                        <p class="page_com"></p>
+                        <div id="map" style="margin: 0 auto; width:500px;height:400px; background:white; ">
+
+                        </div>
+                        
+                        <script>
+                        
+                        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                        
+                            mapOption = { 
+                        
+                                center: new daum.maps.LatLng(37.400667, 126.921005), // 지도의 중심좌표
+                        
+                                level: 3 // 지도의 확대 레벨
+                        
+                            };
+                        
+                         
+                        
+                        var map = new daum.maps.Map(mapContainer, mapOption);
+                        
+                         
+                        
+                        // 마커가 표시될 위치입니다 
+                        
+                        var markerPosition  = new daum.maps.LatLng(37.400667, 126.921005); 
+                        
+                         
+                        
+                        // 마커를 생성합니다
+                        
+                        var marker = new daum.maps.Marker({
+                        
+                            position: markerPosition
+                        
+                        });
+                        
+                         
+                        
+                        // 마커가 지도 위에 표시되도록 설정합니다
+                        
+                        marker.setMap(map);
+                        
+                         
+                        
+                        var iwContent = '<div style="padding:5px;">안양본병원 <br><a href="" style="color:blue" target="_blank"></a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+                        
+                            iwPosition = new daum.maps.LatLng(37.400667, 126.921005); //인포윈도우 표시 위치입니다
+                        
+                         
+                        
+                        // 인포윈도우를 생성합니다
+                        
+                        var infowindow = new daum.maps.InfoWindow({
+                        
+                            position : iwPosition, 
+                        
+                            content : iwContent 
+                        
+                        });
+                        
+                          
+                        
+                        // 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
+                        
+                        infowindow.open(map, marker);
+                        
+                        </script>
+                        
+                        <script type="text/javascript" src="http://m1.daumcdn.net/tiara/js/td.min.js"></script>
+                        
+                        <script type="text/javascript">
+                        
+                        var _tiq = 'undefined' !== typeof _tiq ? _tiq : [];
+                        
+                            window._tiq = _tiq;
+                        
+                            _tiq.push(['__trackPageview']);
+                        
+                        </script>
+                        
+                        <script type="text/javascript" src="http://s1.daumcdn.net/svc/attach/U03/cssjs/mapapidoc/1421136453605/service.min.js">
+                        
+                        </script>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="ftr">
+            <div class="ftr_wrap">
+                <nav class="fnb" id="fnb1">
+                    <ul class="left">
+                        <li><a href="">척추병원</a></li>
+                        <li><a href="">어꺠병원</a></li>
+                        <li><a href="">체형교정병원</a></li>
+                        <li><a href="">다리병원</a></li>
+                    </ul>
+                    <ul class="right">
+                        <li><a href="">진료과</a></li>
+                        <li><a href="">주요센터</a></li>
+                        <li><a href="">관계부처</a></li>
+                        <li><a href="">주요서비스</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="ftr_wrap">
+                <nav class="fnb" id="fnb2">
+                    <ul class="fn">
+                        <li><a href="" class="cyan">다리</a></li>
+                        <li><a href=""></a>어깨</li>
+                        <li><a href="" class="cyan">척추</a></li>
+                        <li><a href=""></a>체형</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="ftr_wrap">
+                <ul class="info">
+                    <li class="copy">
+                        <p class="addr">
+                            <span>주소</span>
+                            <a href="">전화번호</a>
+                            <a href="">팩스</a>
+                        </p>
+                        <p class="copyright">2016 BONE HOSPTIAL ALL RIGHTS RESERVED</p>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
